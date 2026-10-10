@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10071d">
+    <title>Lukas Caetano | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#inicio" class="logo">LK<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link active">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#cursos" class="nav-link">Cursos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Ativar modo claro" title="Alternar tema">
+                <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section container" id="inicio">
+            <div class="hero-content reveal">
+                <span class="eyebrow"><span class="status-dot"></span> PORTFÓLIO DIGITAL</span>
+
+                <h1>Olá, eu sou<br><span class="gradient-text">Lukas Caetano.</span></h1>
+
+                <h2>Desenvolvedor <span id="typingText"></span><span class="typing-cursor">|</span></h2>
+
+                <p class="hero-description">
+                    Transformo ideias em experiências digitais modernas, criativas e funcionais.
+                    Estou sempre aprendendo e desenvolvendo novos projetos com tecnologia.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn btn-primary">Explorar projetos <span>↗</span></a>
+                    <a href="#contato" class="btn btn-outline">Entre em contato</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+                    <span>Desenvolvimento • Criatividade • Tecnologia</span>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="profile-card">
+                    <div class="profile-top">
+                        <span class="window-dot"></span>
+                        <span class="window-dot"></span>
+                        <span class="window-dot"></span>
+                        <span class="profile-label">developer.js</span>
+                    </div>
+
+                    <div class="code-content">
+                        <p><span class="code-purple">const</span> desenvolvedor = {</p>
+                        <p class="indent"><span class="code-blue">nome</span>: <span class="code-green">'Lukas'</span>,</p>
+                        <p class="indent"><span class="code-blue">criatividade</span>: <span class="code-orange">true</span>,</p>
+                        <p class="indent"><span class="code-blue">aprendizado</span>: <span class="code-green">'contínuo'</span>,</p>
+                        <p class="indent"><span class="code-blue">objetivo</span>: <span class="code-green">'inovar'</span></p>
+                        <p>};</p>
+                        <br>
+                        <p><span class="code-purple">function</span> <span class="code-yellow">criarProjeto</span>() {</p>
+                        <p class="indent"> <span class="code-purple">return</span> <span class="code-green">'Nova ideia!'</span>;</p>
+                        <p>}</p>
+                        <br>
+                        <p class="code-comment">// Sempre evoluindo...</p>
+                    </div>
+
+                    <div class="profile-footer">
+                        <span class="status-dot"></span>
+                        <span>Pronto para criar</span>
+                        <span class="profile-symbol">✳</span>
+                    </div>
+                </div>
+
+                <div class="floating-tag tag-top">✦ Criatividade</div>
+                <div class="floating-tag tag-bottom">{" "} &lt;/&gt; Código</div>
+            </div>
+
+            <a href="#sobre" class="scroll-indicator">
+                <span></span>
+                Role para descobrir
+            </a>
+        </section>
+
+        <section class="section about-section" id="sobre">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">01 / SOBRE MIM</span>
+                    <h2>Conheça um pouco<br>do meu <span class="gradient-text">universo.</span></h2>
+                    <p>Tecnologia, curiosidade e vontade de fazer acontecer.</p>
+                </div>
+
+                <div class="about-grid">
+                    <article class="about-card glass-card reveal">
+                        <div class="card-icon">✦</div>
+                        <h3>Quem sou eu?</h3>
+                        <p>
+                            Sou estudante de tecnologia e desenvolvimento web. Gosto de explorar
+                            novas ferramentas, resolver problemas e transformar ideias em projetos
+                            que unem design e programação.
+                        </p>
+                    </article>
+
+                    <article class="about-card glass-card reveal">
+                        <div class="card-icon">⌘</div>
+                        <h3>Meu objetivo</h3>
+                        <p>
+                            Aprimorar minhas habilidades, construir aplicações úteis e criar
+                            interfaces acessíveis, responsivas e visualmente marcantes.
+                        </p>
+                    </article>
+
+                    <article class="about-card glass-card reveal">
+                        <div class="card-icon">↗</div>
+                        <h3>Minha jornada</h3>
+                        <p>
+                            Cada projeto é uma oportunidade de aprender algo novo, testar soluções
+                            e evoluir como desenvolvedor.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="stats-grid reveal">
+                    <div class="stat-item">
+                        <strong data-count="3">0</strong>
+                        <span>Áreas principais</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong data-count="100">0</strong>
+                        <span>Por cento de dedicação</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong data-count="1">0</strong>
+                        <span>Objetivo: evoluir sempre</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="habilidades">
+            <div class="section-heading reveal">
+                <span class="eyebrow">02 / HABILIDADES</span>
+                <h2>Tecnologias que fazem<br>parte do meu <span class="gradient-text">aprendizado.</span></h2>
+                <p>Conhecimentos que continuo desenvolvendo na prática.</p>
+            </div>
+
+            <div class="skills-layout">
+                <div class="skills-list glass-card reveal">
+                    <div class="skill-item">
+                        <div class="skill-info"><span>HTML5</span><span>90%</span></div>
+                        <div class="skill-track"><div class="skill-fill" data-level="90"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info"><span>CSS3</span><span>80%</span></div>
+                        <div class="skill-track"><div class="skill-fill" data-level="80"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info"><span>JavaScript</span><span>65%</span></div>
+                        <div class="skill-track"><div class="skill-fill" data-level="65"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info"><span>SQL</span><span>60%</span></div>
+                        <div class="skill-track"><div class="skill-fill" data-level="60"></div></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Design responsivo</span><span>75%</span></div>
+                        <div class="skill-track"><div class="skill-fill" data-level="75"></div></div>
+                    </div>
+                </div>
+
+                <div class="tech-panel reveal">
+                    <span class="eyebrow">STACK DE TECNOLOGIA</span>
+                    <h3>Ferramentas para<br>tirar ideias do papel.</h3>
+
+                    <div class="tech-grid">
+                        <div class="tech-item"><span>5</span>HTML</div>
+                        <div class="tech-item"><span>3</span>CSS</div>
+                        <div class="tech-item"><span>JS</span>JavaScript</div>
+                        <div class="tech-item"><span>DB</span>SQL</div>
+                        <div class="tech-item"><span>GH</span>GitHub</div>
+                        <div class="tech-item"><span>UI</span>UI Design</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects-section" id="projetos">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">03 / PROJETOS</span>
+                    <h2>Ideias transformadas<br>em <span class="gradient-text">experiências.</span></h2>
+                    <p>Exemplos de projetos para apresentar meus conhecimentos.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-art art-one">
+                            <span class="art-label">01 — WEB DESIGN</span>
+                            <div class="mini-browser">
+                                <div class="mini-browser-top"><i></i><i></i><i></i></div>
+                                <div class="mini-browser-body">
+                                    <div class="mini-sidebar"></div>
+                                    <div class="mini-content">
+                                        <div class="mini-line"></div>
+                                        <div class="mini-line short"></div>
+                                        <div class="mini-blocks"><i></i><i></i><i></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <h3>Portfólio pessoal</h3>
+                            <p>Uma apresentação digital responsiva com animações, navegação suave e alternância de tema.</p>
+                            <a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-art art-two">
+                            <span class="art-label">02 — PRODUTIVIDADE</span>
+                            <div class="task-preview">
+                                <div class="task-heading">Minhas tarefas <span>✦</span></div>
+                                <div class="task-row"><span class="task-check">✓</span> Organizar projetos</div>
+                                <div class="task-row"><span class="task-check">✓</span> Estudar programação</div>
+                                <div class="task-row"><span class="task-empty"></span> Criar novas ideias</div>
+                                <div class="task-progress"><span></span></div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags"><span>JavaScript</span><span>CSS</span></div>
+                            <h3>Gerenciador de tarefas</h3>
+                            <p>Uma interface para organizar atividades e acompanhar o progresso de tarefas do dia a dia.</p>
+                            <a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-art art-three">
+                            <span class="art-label">03 — DADOS</span>
+                            <div class="dashboard-preview">
+                                <div class="dashboard-number">Visão geral <span>↗</span></div>
+                                <div class="dashboard-value">Dashboard</div>
+                                <div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                                <div class="chart-caption">Visualização de dados</div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags"><span>SQL</span><span>HTML</span><span>CSS</span></div>
+                            <h3>Painel de dados</h3>
+                            <p>Um conceito de painel visual para organizar informações e facilitar a leitura de dados.</p>
+                            <a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="projects-note">Os projetos acima são exemplos demonstrativos. Substitua os links pelos repositórios dos seus projetos reais.</p>
+            </div>
+        </section>
+
+        <section class="section container" id="cursos">
+            <div class="section-heading reveal">
+                <span class="eyebrow">04 / FORMAÇÃO</span>
+                <h2>Aprendizado em<br><span class="gradient-text">construção.</span></h2>
+                <p>Uma jornada de evolução constante.</p>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">EM ANDAMENTO</span>
+                        <h3>Desenvolvimento de sistemas</h3>
+                        <p>Estudos de programação, lógica, banco de dados e construção de aplicações.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">EM ANDAMENTO</span>
+                        <h3>Desenvolvimento web</h3>
+                        <p>Prática com HTML, CSS, JavaScript, responsividade e experiência do usuário.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">APRENDIZADO CONTÍNUO</span>
+                        <h3>Novas tecnologias</h3>
+                        <p>Exploração de ferramentas, boas práticas e novos recursos para projetos digitais.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contato">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">05 / CONTATO</span>
+                    <h2>Vamos criar algo<br><span class="gradient-text">incrível juntos?</span></h2>
+                    <p>Preencha o formulário para entrar em contato.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h3>Vamos conversar.</h3>
+                        <p>Tem uma ideia, uma oportunidade ou quer trocar conhecimentos? Envie sua mensagem.</p>
+
+                        <div class="contact-detail">
+                            <span class="contact-detail-icon">✉</span>
+                            <div><small>E-MAIL</small><strong>Seu e-mail aqui</strong></div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <span class="contact-detail-icon">⌘</span>
+                            <div><small>GITHUB</small><strong>Seus projetos e códigos</strong></div>
+                        </div>
+
+                        <div class="contact-decoration">LET'S BUILD<br><span>THE FUTURE.</span></div>
+                    </div>
+
+                    <form class="contact-form glass-card reveal" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="name">Nome completo *</label>
+                                <input id="name" name="name" type="text" placeholder="Seu nome" autocomplete="name" maxlength="100" required>
+                                <small class="field-error" id="nameError"></small>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">E-mail *</label>
+                                <input id="email" name="email" type="email" placeholder="voce@email.com" autocomplete="email" maxlength="150" required>
+                                <small class="field-error" id="emailError"></small>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="phone">Telefone *</label>
+                                <input id="phone" name="phone" type="tel" placeholder="(31) 99999-9999" autocomplete="tel" inputmode="numeric" maxlength="15" required>
+                                <small class="field-error" id="phoneError"></small>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="subject">Assunto *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="Projeto">Projeto</option>
+                                    <option value="Oportunidade">Oportunidade</option>
+                                    <option value="Dúvida">Dúvida</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                                <small class="field-error" id="subjectError"></small>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" placeholder="Escreva sua mensagem..." rows="5" maxlength="2000" required></textarea>
+                            <div class="message-footer">
+                                <small class="field-error" id="messageError"></small>
+                                <small id="characterCount">0/2000</small>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">Validar e enviar <span>↗</span></button>
+                        <p class="form-note">* Campos obrigatórios. A validação é realizada no navegador.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#inicio" class="logo">LK<span>.</span></a>
+            <p>Desenvolvido com criatividade e código.</p>
+            <span>© <span id="currentYear"></span> Lukas Caetano</span>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" id="modalClose" aria-label="Fechar janela">×</button>
+            <div class="modal-icon" id="modalIcon">✓</div>
+            <h2 id="modalTitle">Tudo certo!</h2>
+            <p id="modalMessage">Seu formulário foi validado.</p>
+            <button class="btn btn-primary modal-button" id="modalOk">Entendi</button>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+</body>
+</html>
